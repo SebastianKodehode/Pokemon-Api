@@ -22,10 +22,9 @@ body {
 }
 
 @keyframes wiggle {
-  0%    { transform: rotate(0deg); }
-  20%   { transform: rotate(10deg); }
-  80%   { transform: rotate(20deg); }
-  100%  { transform: rotate(40deg); }
+  0%    { transform: rotate(1deg); }
+  100%  { transform: rotate(3deg); }
+  50%   { transform: rotate(2deg);  }
 }
 
 .red-half {
