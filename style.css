@@ -1,0 +1,137 @@
+body {
+  background-color: #FFF;
+}
+
+.wrapper {
+  min-height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.ball:hover {
+  animation: wiggle 1s infinite;
+  cursor: pointer;
+}
+
+@keyframes wiggle {
+  0%    { transform: rotate(0deg); }
+  20%   { transform: rotate(10deg); }
+  80%   { transform: rotate(20deg); }
+  100%  { transform: rotate(40deg); }
+}
+
+.red-half {
+  height: 100px;
+  width: 200px;
+  background-color: red;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.white-half {
+  height: 100px;
+  width: 200px;
+  background-color: white;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.black-band {
+  position: relative;
+  top: -105px;
+  width: 200px;
+  height: 14px;
+  background-color: black;
+}
+
+.outer-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -147px;
+  left: 63px;
+  height: 60px;
+  width: 60px;
+  border: 7px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.inner-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid black
+}
+
+h2 {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+#pokemon {
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  width: 30rem;
+  height: 15rem;
+
+  border: 1px solid black;
+  border-radius: 1rem;
+
+  background-color: #404040;
+  color: #FFF;
+}
+
+#pokemon h2 {
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  text-align: center;
+
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+#pokemon .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#pokemon h5 {
+  margin: 0 auto;
+
+  text-align: right;
+
+  align-self: center;
+}
+
+#pokemon ul {
+  text-transform: uppercase;
+  justify-content: space-around;
+
+  align-self: center;
+}
+
+#pokemon li {
+  margin-top: 1rem; 
+}
+
+#pokemon img {
+  margin: 0.5rem;
+  grid-row-start: 1;
+
+  width: 10rem;
+  height: 10rem;
+
+  object-fit: contain;
+}
