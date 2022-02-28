@@ -34,8 +34,8 @@ loadPokemon.addEventListener('click', function() {
       pokeNum.innerText = "ID: " + `#${pokeData.id}`
       pokeTypes.innerText = "Type: " 
 
-      gridBox.append(pokeTypes, pokeNum )
-      pokeContainer.append(pokeName, gridBox);
+      gridBox.append(pokeTypes )
+      pokeContainer.append(pokeName, pokeNum,  gridBox);
 
       createPokeImg(pokeData.id)
       createTypes(pokeData.types, pokeTypes)
@@ -60,25 +60,3 @@ loadPokemon.addEventListener('click', function() {
     }
   }
 })
-
-
-
-
-// let pokeContainer = document.createElement('div')
-//       pokeContainer.id = "pokemon"
-//       let gridBox = document.createElement('div')
-//       gridBox.classList.add('grid')
-
-//       let pokeName = document.createElement('h4')
-//       pokeName.innerText = pokeData.name
-
-//       let pokeNum = document.createElement('h5')
-//       pokeNum.innerText = `${pokeData.id}`
-
-//       let pokeTypes = document.createElement('ul')
-//       createTypes(pokeData.types, pokeTypes)
-
-//       gridBox.append(pokeNum, pokeTypes)
-//       pokeContainer.append(pokeName, gridBox);
-
-//       createPokeImg(pokeData.id)

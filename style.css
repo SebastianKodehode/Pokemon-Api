@@ -1,93 +1,18 @@
+
+
+
 body {
-  background-color: #FFF;
+  background: #0a192f;
 }
 
-.wrapper {
-  min-height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.ball {
-  height: 200px;
-  width: 200px;
-  border: 2px solid black;
-  border-radius: 50%;
-}
 
-.ball:hover {
-  animation: wiggle 1s infinite;
-  cursor: pointer;
-}
+/*
+Typography
+*/
 
-@keyframes wiggle {
-  0%    { transform: rotate(1deg); }
-  100%  { transform: rotate(3deg); }
-  50%   { transform: rotate(2deg);  }
-}
-
-.red-half {
-  height: 100px;
-  width: 200px;
-  background-color: red;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
-}
-
-.white-half {
-  height: 100px;
-  width: 200px;
-  background-color: white;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-}
-
-.black-band {
-  position: relative;
-  top: -105px;
-  width: 200px;
-  height: 14px;
-  background-color: black;
-}
-
-.outer-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: -147px;
-  left: 63px;
-  height: 60px;
-  width: 60px;
-  border: 7px solid black;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.inner-button {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 1px solid black
-}
-
-h2 {
+h1 {
   text-align: center;
-  margin-top: 5rem;
-}
-
-#pokemon {
-  margin: 0 auto;
-  margin-top: 5rem;
-
-  width: 30rem;
-  height: 15rem;
-
-  border: 1px solid black;
-  border-radius: 1rem;
-
-  background-color: #404040;
   color: #FFF;
 }
 
@@ -101,17 +26,69 @@ h2 {
   text-transform: uppercase;
 }
 
-#pokemon .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+#pokemon h5 {
+  margin: 1rem auto;
+  margin-bottom: 0;
+
+  text-align: center;
+  align-self: center;
 }
 
-#pokemon h5 {
+/*
+Layout
+*/
+
+.interact {
+  margin: 0 auto; 
+  margin-top: 5rem;
+
+  width: 80%;
+}
+
+.catchbtn {
   margin: 0 auto;
+  margin-top: 2rem;
 
-  text-align: right;
+  text-align: center;
+}
 
-  align-self: center;
+.catchbtn > button  {
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  font-size: 1.5rem;
+
+  background-color: rgb(219, 20, 20);
+  color: white;
+}
+
+.catchbtn > button:hover {
+  background-color: #FFF;
+  color: rgb(219, 20, 20);
+}
+
+#pokemon {
+  margin: 0 auto;
+  margin-top: 5rem;
+
+  width: 22rem;
+  height: 35vh;
+
+  border-radius: 1rem;
+
+  background-color: #FFF;
+  color: #000;
+}
+
+#pokemon .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 100%;
+  height: 10rem;
 }
 
 #pokemon ul {
@@ -129,8 +106,8 @@ h2 {
   margin: 0.5rem;
   grid-row-start: 1;
 
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
 
   object-fit: contain;
 }
